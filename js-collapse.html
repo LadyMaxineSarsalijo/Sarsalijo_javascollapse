@@ -6,30 +6,25 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Maxine's Online CV</title>
 		<link rel="stylesheet" href="css/style.css">	
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-		<script>
-		$(document).ready(function(){
-		$('#icon').click(function(){
-		$('ul').toggleClass('show')
-			});
-			});
-	</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<nav>
-			<label class = "logo"> Online CV</label>
-			<ul>
-				<li><a class="active" href="#about">About</a></li>
-				<li><a href="#education">Education</a> </li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a> </li>			
-		</ul>
-			<label id="icon">
-				<i class = "fas fa-bars"> </i>
-			</label>
-		</nav>
+		
+		<div class = "header">
+			<ul class="topnav responsive" id="myTopnav">
+			<label  class = "logo"> Online CV </label>
+			<a href="#about">About</a>
+			<a href="#education">Education</a>
+			<a href="#skills">Skills</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars">
+				</i>
+              </a>
+			</ul>
+			</div>
 	 <center>  
 		<br></br>
 	<div class="page-content">
@@ -69,6 +64,17 @@
 		 <br> <a href = "https://www.instagram.com/ladymaximaaa/"style = "color: orange"> Instagram || @ladymaximaaa </a> 
 		 <p> <strong> 0935-451-4513 || iammaxine19@gmail.com </strong> </p>
 	</div>
+	<script>
+	
+			function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className == "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+			}
+		</script>
 	</body>
 	<footer>
 		<br> <p> Author: Lady Maxine Y. Sarsalijo </p> </br>
